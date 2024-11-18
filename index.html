@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the fundamentals of HTML including structure, elements, and attributes.">
+    <title>HTML Fundamentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, footer {
+            background: #7f7fb3;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a:hover {
+            color: #7f7fb3;
+        }
+        main {
+            max-width: 800px;
+            padding: 1em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            margin-top: auto;
+            padding: 0.5em;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Fundamentals</h1>
+        <p>The backbone of every website you see!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#basics">HTML Basics</a></li>
+            <li><a href="#elements">HTML Elements</a></li>
+            <li><a href="#attributes">HTML Attributes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="basics">
+            <h2>HTML Basics</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+            <ul>
+                <li>Provides the basic structure of a webpage.</li>
+                <li>Supports multimedia elements like images, videos, and audio.</li>
+            </ul>
+        </section>
+
+        <section id="elements">
+            <h2>HTML Elements</h2>
+            <p>HTML elements are the building blocks of HTML documents.</p>
+            <ul>
+                <li>Elements consist of an opening tag, content, and a closing tag.</li>
+                <li>They can be nested and styled using CSS.</li>
+            </ul>
+        </section>
+
+        <section id="attributes">
+            <h2>HTML Attributes</h2>
+            <p>Attributes provide additional information about an element.</p>
+            <ul>
+                <li>Attributes are specified in the opening tag.</li>
+                <li>Common attributes include <code>id</code>, <code>class</code>, <code>src</code>, and <code>alt</code>.</li>
+            </ul>
+            <figure>
+                <img src="data:image/jpeg;base64,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" alt="Example image with alt" />
+                <figcaption>An example of an image element with <code>src</code> and <code>alt</code> attributes.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Fundamentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
